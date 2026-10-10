@@ -1,87 +1,99 @@
-# Multiplication Table Generator
+# ✖️ Multiplication Table Generator
 
-A simple and interactive web application built using **Streamlit** that generates multiplication tables for any number entered by the user.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Streamlit-Interactive%20App-FF4B4B?logo=streamlit&logoColor=white" alt="Streamlit">
+  <img src="https://img.shields.io/badge/Level-Beginner-success" alt="Project level">
+</p>
 
-## Features
+> 🔢 Enter a number and generate its multiplication table from **1 to 10** in a simple Streamlit app.
 
-* User-friendly interface
-* Generates multiplication table from 1 to 10
-* Number input validation
-* Supports numbers from 0 to 1000
-* Fast and interactive execution using Streamlit
+## 🌟 Overview
 
-## Technologies Used
+**Multiplication Table Generator** is a beginner-friendly Python project that demonstrates numeric input, basic arithmetic, and interactive web UI development with Streamlit.
 
-* Python
-* Streamlit
+## ✨ Features
 
-## Project Structure
+- 🔢 Generate a table for a number from 0 to 1000
+- ✖️ Display multiplication results from 1× to 10×
+- ✅ Input limits to keep values within the supported range
+- ⚡ Simple, quick, browser-based interface
+- 🧑‍🎓 Useful practice for Python loops and Streamlit controls
+
+## 🛠️ Tech Stack
+
+- 🐍 **Python** — input handling and multiplication logic
+- 🎈 **Streamlit** — web interface
+
+## 📂 Project Structure
+
+```text
+Table-generator/
+├── app.py
+└── README.md
+```
+
+## 🚀 Run Locally
+
+### 1️⃣ Clone the repository
 
 ```bash
-📁 Multiplication-Table-Generator
-│── app.py
-│── README.md
+git clone https://github.com/Pareshprajapati-777/Table-generator.git
+cd Table-generator
 ```
 
-## Installation
-
-1. Clone the repository
+### 2️⃣ Install Streamlit
 
 ```bash
-git clone https://github.com/your-username/Multiplication-Table-Generator.git
+python -m pip install streamlit
 ```
 
-2. Move into the project folder
+### 3️⃣ Launch the app
 
 ```bash
-cd Multiplication-Table-Generator
+python -m streamlit run app.py
 ```
 
-3. Install required libraries
+Open the local URL printed in the terminal.
 
-```bash
-pip install streamlit
+## 🧭 How to Use
+
+1. Open the app in your browser.
+2. Enter a number between **0 and 1000**.
+3. Click the submit button.
+4. View the multiplication table from **1 to 10**.
+
+## 💻 Example
+
+For input `7`, the output includes:
+
+```text
+7 × 1 = 7
+7 × 2 = 14
+7 × 3 = 21
+...
+7 × 10 = 70
 ```
 
-## Run the Application
+## 🎯 Learning Outcomes
 
-```bash
-streamlit run app.py
-```
+- Use Streamlit number inputs and buttons
+- Apply loops and arithmetic in Python
+- Display generated results in a web interface
 
-## Code Example
+## 🔮 Future Ideas
 
-```python
-import streamlit as st
+- 🎛️ Let users choose the table's end value
+- 📚 Generate multiple tables at once
+- 📄 Export tables to a text or PDF file
+- 🎨 Add themes and improved result formatting
 
-st.title("Welcome to Table World")
+## 👨‍💻 Author
 
-n = st.number_input(
-    "Enter a number",
-    min_value=0,
-    max_value=1000
-)
+**Paresh Prajapati** · Python developer and AI/ML student
 
-if st.button("Submit"):
-    for i in range(1, 11):
-        st.write(f"{n} * {i} = {n*i}")
-```
+🔗 [GitHub Profile](https://github.com/Pareshprajapati-777)
 
-## How It Works
+---
 
-1. Enter a number in the input field
-2. Click the **Submit** button
-3. The app displays the multiplication table from 1 to 10
-
-## Future Improvements
-
-* Add custom table range
-* Add dark/light mode
-* Download table as PDF
-* Add colorful UI design
-* Support multiple tables at once
-
-## Author
-
-Paresh Prajapati
-AI & ML Student | Python Developer
+⭐ If this beginner project helps you, consider starring the repository!
